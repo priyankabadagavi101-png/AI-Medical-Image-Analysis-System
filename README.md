@@ -52,8 +52,8 @@ AI-Medical-Image-Analysis-System
 
 The project uses the **Chest X-Ray Pneumonia Dataset**, which contains labeled chest X-ray images categorized into:
 
-* **NORMAL**
-* **PNEUMONIA**
+* NORMAL
+* PNEUMONIA
 
 Dataset structure:
 
@@ -96,7 +96,11 @@ Model performance:
 * **Accuracy:** ~83%
 * High recall for pneumonia detection
 
-Example confusion matrix:
+### Accuracy Graph
+
+![Accuracy Graph](outputs/accuracy.png)
+
+### Confusion Matrix
 
 ![Confusion Matrix](outputs/confusion_matrix.png)
 
@@ -104,39 +108,31 @@ Example confusion matrix:
 
 ## How to Run the Project
 
-### 1. Install dependencies
+### Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
----
-
-### 2. Train the model
+### Train the model
 
 ```
 python src/train_model.py
 ```
 
----
-
-### 3. Predict using a new X-ray image
+### Predict using a new X-ray image
 
 ```
 python src/predict.py
 ```
 
----
-
-### 4. Evaluate the model
+### Evaluate the model
 
 ```
 python src/evaluate_model.py
 ```
 
----
-
-### 5. Run the web application
+### Run the web application
 
 ```
 streamlit run app.py
