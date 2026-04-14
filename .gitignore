@@ -1,4 +1,6 @@
-data/
 venv/
+.venv/
 __pycache__/
-*.h5
+*.pyc
+data/
+*.ipynb_checkpoints
